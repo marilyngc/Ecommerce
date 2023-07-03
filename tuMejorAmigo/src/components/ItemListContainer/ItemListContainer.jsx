@@ -13,7 +13,6 @@ import { MdOutlineMedicalServices } from "react-icons/md";
 export const ItemListContainer = () => {
   const { products } = useProducts();
 
-  
 
   return (
     <div className="container-fluid p-0  ">
