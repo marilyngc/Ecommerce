@@ -7,10 +7,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/TuMejorAmigo/",
+    
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "main -d dist"
+    "predeploy": "npm run build"
+    
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
