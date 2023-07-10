@@ -1,0 +1,17 @@
+
+
+
+  
+// UI Variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import './components/base/variables';
+
+// Components
+@import "./components/page404";
+@import './components/global';
+ @import './components/mixin';
+@import './components/navBar';
+@import "./components/home";
+@import "./components/catalogue";
+@import './components/footer';
+
