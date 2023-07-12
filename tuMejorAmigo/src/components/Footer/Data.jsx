@@ -9,7 +9,7 @@ export const Contacts = [
     icon: (
       <BsGeoAlt
         className="fs-1 mt-lg-2 me-lg-0 me-3 mt-2"
-        style={{ fontSize: "3rem", color: "rgb(164, 100, 237)" }}
+        style={{ fontSize: "3rem", color: " #8c524c" }}
       />
     ),
   },
@@ -20,7 +20,7 @@ export const Contacts = [
     icon: (
       <BsTelephone
         className="fs-1 mt-lg-2 me-lg-0 me-3 mt-2"
-        style={{ fontSize: "3rem", color: "rgb(164, 100, 237)" }}
+        style={{ fontSize: "3rem", color: " #8c524c" }}
       />
     ),
   },
@@ -31,7 +31,7 @@ export const Contacts = [
     icon: (
       <BsEnvelopeHeart
         className="fs-1 mt-lg-2 me-lg-0 me-3 mt-2"
-        style={{ fontSize: "3rem", color: "rgb(164, 100, 237)" }}
+        style={{ fontSize: "3rem", color: " #8c524c" }}
       />
     ),
   },

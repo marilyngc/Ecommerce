@@ -6,7 +6,7 @@ const isMobile =  useMobile()
         <main>
         <section
           id="section1"
-          class="w-auto d-flex row justify-content-center"
+          className="w-auto d-flex row justify-content-center"
         >
             <h2>inicio</h2>
             <hr />

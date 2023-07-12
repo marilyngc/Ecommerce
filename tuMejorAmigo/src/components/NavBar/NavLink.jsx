@@ -1,10 +1,10 @@
 import { ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import {BsFillPersonFill} from "react-icons/bs"
 const link = [
-  { id: 1, nav: "Ser cuidador", link: "/serCuidador" },
-  { id: 2, nav: "Registrarme", link: "/registrarme" },
-  { id: 3, nav: "Catálogo", link: "/catalogo" },
+
+  { id: 1, nav: " productos", link: "/catalogo" },
+  {id:2, nav: <BsFillPersonFill className="fs-4"/> , link: "/iniciarSesion"}
 ];
 
 export const NavLink = () => {

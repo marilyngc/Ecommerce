@@ -8,7 +8,6 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { Footer } from "./components/Footer/Footer";
 import { Inicio } from "./components/Inicio/Inicio";
-import { Registrarme } from "./components/Registrarme/Registrarme";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import Page404 from "./components/404/Page404"
 
@@ -18,14 +17,12 @@ function App() {
     <BrowserRouter>
   
 
+      
+      <NavBar/>
       <Routes>
-        <Route path="/registrarme" element={<NavBar variant/>}/>
-        <Route path="*" element={<NavBar/>}/>
-      </Routes>
 
-      <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/registrarme" element={<Registrarme />} />
+
         <Route path="/catalogo" element={<ItemListContainer />} />
         <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
         <Route path="/detail/:itemId" element={<ItemDetailContainer />} />

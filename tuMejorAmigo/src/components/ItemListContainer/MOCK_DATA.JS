@@ -1,19 +1,28 @@
 import collar from "../../assets/products/collar.jpg";
-import mouse from "../../assets/products/juguete.jpg";
-import brush from "../../assets/products/cortaUñas.png";
-import catFood from "../../assets/products/food.jpg";
-import toy from "../../assets/products/toy3.jpg";
-import dogFood from "../../assets/products/food2.jpg";
+
 import petFood from "../../assets/products/food3.jpg";
 import pets from "../../assets/products/food4.jpg";
 import ropa from "../../assets/products/ropa3.jpg";
 import ropa1 from "../../assets/products/ropa1.jpg";
 import medicine from "../../assets/products/medicina.jpg";
 import petToy from "../../assets/products/juguete2.jpg";
-import grooming from "../../assets/products/bolsa.jpg";
+
 import cepillo from "../../assets/products/cepillo.jpg";
 
 import shampoo from "../../assets/products/shampoo-para-mascotas.jpg";
+
+
+import combo from "../../assets/products/combo.jpg"
+import contornoDeOjos from "../../assets/products/contornoDeOjos.jpg"
+import hidratante from "../../assets/products/hidratante.jpg"
+import hidratante1 from "../../assets/products/hidratante1.jpg"
+import serum from "../../assets/products/serum.jpg"
+import sunProtect from "../../assets/products/sunProtect.jpg"
+import  sunProtects from "../../assets/products/sunProtects.jpg"
+
+
+
+
 
 export const MOCK_DATA = [
   {
@@ -21,8 +30,8 @@ export const MOCK_DATA = [
     nombre: "Collar",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
-    category: "accesorios",
-    img: collar,
+    category: "combos",
+    img: combo,
     stock:5,
     sizes : [
       {
@@ -44,8 +53,8 @@ export const MOCK_DATA = [
     nombre: "Corta uñas",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
-    category: "higiene",
-    img: brush,
+    category: "Contorno de ojos",
+    img: contornoDeOjos,
     stock:5,
     sizes:  [
       {
@@ -67,8 +76,8 @@ export const MOCK_DATA = [
     nombre: "Hueso de goma",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
-    category: "juguetes",
-    img: mouse,
+    category: "Crema hidratante",
+    img: hidratante,
     stock:5,
     sizes:[
       {
@@ -90,8 +99,8 @@ export const MOCK_DATA = [
     nombre: "Bolsa",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
-    category: "higiene",
-    img: grooming,
+    category: "Crema hidratante",
+    img: hidratante1,
     stock:5,
     sizes:[
       {
@@ -114,8 +123,8 @@ export const MOCK_DATA = [
     nombre: "Alimento para perros",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
-    category: "alimento",
-    img: catFood,
+    category: "serum",
+    img:serum,
     stock:5,
     sizes:[
       {
@@ -137,8 +146,8 @@ export const MOCK_DATA = [
     nombre: "Peluche de elefante",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
-    category: "juguetes",
-    img: toy,
+    category: "Protector solar",
+    img: sunProtect,
     stock:5,
     sizes:[
       {
@@ -161,7 +170,7 @@ export const MOCK_DATA = [
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
     precio: 1500,
     category: "alimento",
-    img: dogFood,
+    img: sunProtects,
     stock:5,
     sizes:[
       {

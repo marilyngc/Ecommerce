@@ -11,7 +11,7 @@ import { MdOutlineMedicalServices } from "react-icons/md";
 
 
 export const ItemListContainer = () => {
-  const { products } = useProducts();
+  const { list } = useProducts();
 
 
   return (
@@ -22,24 +22,24 @@ export const ItemListContainer = () => {
           <Link to="/catalogo" className=" link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none"> Todos</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/higiene" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Higiene</Link>
+          <Link to="/catalogo/higiene" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Combos</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/accesorios" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Accesorios</Link>
+          <Link to="/catalogo/accesorios" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Protector solar</Link>
         </Nav.Item>
 
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/juguetes" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Juguetes </Link>
+          <Link to="/catalogo/juguetes" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Crema hidratante </Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/alimento" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Alimento</Link>
+          <Link to="/catalogo/alimento" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Serum</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/medicina" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Medicina</Link>
+          <Link to="/catalogo/medicina" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Contorno de ojos </Link>
         </Nav.Item>
       </Nav>
 
-      <ItemList  items={products} />
+      <ItemList  items={list} />
     </div>
   );
 };

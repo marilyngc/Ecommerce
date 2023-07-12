@@ -3,37 +3,36 @@
   //background: #e0e0e0;
 }
 
-.positionText {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-}
+
+
 h1 {
   display: inline-block;
   color: white;
   font-family: $font-family-catalogue;
-  font-size: 8em;
-  text-shadow: 0.03em 0.03em 0 #ffcd14;
+  font-size: 9rem;
+  text-shadow: 0.03em 0.03em 0 #57350E;
+
 }
 h1:after {
   content: attr(data-shadow);
   position: absolute;
-  top: 0.2em;
-  left: 0.2em;
+  top: .75em;
+  left: 0.73em;
   z-index: -1;
   text-shadow: none;
   background-image: linear-gradient(
     45deg,
-    transparent 5%,
+    transparent 45%,
     rgb(255, 255, 255) 45%,
     rgb(253, 249, 255) 55%,
     transparent 0
   );
   background-size: 0.05em 0.05em;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-  animation: shad-anim 25s linear infinite;
+  -webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+  animation: shad-anim 40s linear infinite;
 }
 
 @keyframes shad-anim {

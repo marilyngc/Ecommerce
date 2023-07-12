@@ -1,5 +1,6 @@
-import { BsCart2} from "react-icons/bs";
 
+import { BsCart2} from "react-icons/bs";
+import {BsBagHeart} from "react-icons/bs";
 import {ListGroup } from "react-bootstrap";
 
 
@@ -12,7 +13,7 @@ export const CartWidget = () => {
      
 
     
-    <ListGroup className='nav-link-cart d-block p-1  me-2 ' >   <BsCart2 className="fs-4"/> 0 </ListGroup>
+    <ListGroup className='nav-link-cart d-block p-2   ' >   <BsBagHeart className="fs-4"/> 0 </ListGroup>
 
     
     
