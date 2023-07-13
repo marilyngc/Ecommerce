@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
-import logoJehnny from "../../../assets/logo/JehnnyFont2.png";
+import logoJehnny from "../../../assets/logo/Jehnny.jpg";
 export const Text = () => {
     return(
         <div className="col-xs-12 col-lg-4 ">
 
-            <Link to="/">   <Image src={logoJehnny} style={{ width:"200px", height: "100px"}}   /> </Link>
-        <p className="mt-2">
-          Registrate para poder hacer una reserva y que tu mascota disfrute
-          del acompañamiento de un miembro de nuestro equipo.
+            <Link to="/">   <Image src={logoJehnny} style={{ width:"200px", height: "90px"}}   /> </Link>
+        <p className="mt-3">
+          Registrate para poder hacer una compra y que tu piel disfrute
+          del cuidado de nuestros productos.
         </p>
       </div>
     )

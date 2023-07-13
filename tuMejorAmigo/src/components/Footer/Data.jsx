@@ -16,7 +16,7 @@ export const Contacts = [
   {
     id: 2,
     subtitle: "Llámanos",
-    paragraph: "1184336432",
+    paragraph: "+54 09 1184336432",
     icon: (
       <BsTelephone
         className="fs-1 mt-lg-2 me-lg-0 me-3 mt-2"
@@ -27,7 +27,7 @@ export const Contacts = [
   {
     id: 3,
     subtitle: "Nuestro Email",
-    paragraph: "tuMejorAmigo@gmail.com",
+    paragraph: "jehnnygutierrez@gmail.com",
     icon: (
       <BsEnvelopeHeart
         className="fs-1 mt-lg-2 me-lg-0 me-3 mt-2"
@@ -38,8 +38,8 @@ export const Contacts = [
 ];
 
 export const Links = [
-  { id: 1, link: ["Inicio", "Servicios", "Contacto", "Sobre Nosotros"] },
-  { id: 2, link: ["Portafolio", "Galeria", "Grupo experto", "Noticias"] },
+  { id: 1, link: ["Inicio", "Servicios", "Contacto" ] },
+  { id: 2, link: ["Nosotras", "Galeria", "Grupo experto"] },
 ];
 
 export const Networks = [

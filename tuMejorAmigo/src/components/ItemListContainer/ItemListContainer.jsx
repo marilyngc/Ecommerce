@@ -22,20 +22,20 @@ export const ItemListContainer = () => {
           <Link to="/catalogo" className=" link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none"> Todos</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/higiene" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Combos</Link>
+          <Link to="/catalogo/combos" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Combos</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/accesorios" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Protector solar</Link>
+          <Link to="/catalogo/protector" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Protector solar</Link>
         </Nav.Item>
 
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/juguetes" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Crema hidratante </Link>
+          <Link to="/catalogo/hidratante" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Crema hidratante </Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/alimento" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Serum</Link>
+          <Link to="/catalogo/serum" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Serum</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/medicina" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Contorno de ojos </Link>
+          <Link to="/catalogo/contorno" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Contorno de ojos </Link>
         </Nav.Item>
       </Nav>
 

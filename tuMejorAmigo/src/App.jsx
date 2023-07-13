@@ -15,10 +15,13 @@ import Page404 from "./components/404/Page404"
 function App() {
   return (
     <BrowserRouter>
-  
+   <Routes>
+        <Route path="/detail/:itemId" element={<NavBar variant/>}/>
+        <Route path="*" element={<NavBar/>}/>
+      </Routes>
 
       
-      <NavBar/>
+    
       <Routes>
 
         <Route path="/" element={<Inicio />} />
