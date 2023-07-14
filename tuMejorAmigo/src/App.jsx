@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./scss/styles.scss";
 import "./App.css";
@@ -9,32 +9,40 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import { Footer } from "./components/Footer/Footer";
 import { Inicio } from "./components/Inicio/Inicio";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
-import Page404 from "./components/404/Page404"
-
-
+import Page404 from "./components/404/Page404";
+import { CartProvider } from "./context/CartContext";
+import { DarkModerProvider } from "./context/DarkModeContext";
+import Cart from "./components/Cart/Cart";
 function App() {
+
+
   return (
-    <BrowserRouter>
-   <Routes>
-        <Route path="/detail/:itemId" element={<NavBar variant/>}/>
-        <Route path="*" element={<NavBar/>}/>
-      </Routes>
+    <DarkModerProvider> {/* context */}
+<CartProvider> {/*  context */}
+<BrowserRouter>
+        <Routes>
+          <Route path="/detail/:itemId" element={<NavBar variant />} />
+          <Route path="*" element={<NavBar />} />
+        </Routes>
 
-      
-    
-      <Routes>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
 
-        <Route path="/" element={<Inicio />} />
+          <Route path="/catalogo" element={<ItemListContainer />} />
+          <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
+          <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<Cart/>} />
+          {/*    <Route path="*" element={<Navigate to={"/"}/>}/> */}
+          <Route path="*" element={<Page404 />} />
+        </Routes>
 
-        <Route path="/catalogo" element={<ItemListContainer />} />
-        <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
-        <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-     {/*    <Route path="*" element={<Navigate to={"/"}/>}/> */}
-        <Route path="*" element={<Page404/>}/>
-      </Routes>
-     
-      <Footer />
-    </BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+</CartProvider>
+    </DarkModerProvider>
+
+
+
   );
 }
 

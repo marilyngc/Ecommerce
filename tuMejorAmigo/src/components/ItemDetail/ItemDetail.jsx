@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCount";
 import SelectSize from "../SelectSize/SelectSize";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import { CartContext } from "../../context/CartContext";
 export const ItemDetail = ({
   id,
   nombre,
@@ -15,7 +16,7 @@ export const ItemDetail = ({
 }) => {
   const [count, setCount] = useState(init);
   const [size, setSize] = useState(null);
-
+  const {addCart, isInCart} = useContext(CartContext)
 const navigate = useNavigate();
 
   const handleAggregate = () => {
@@ -30,6 +31,10 @@ const navigate = useNavigate();
       count,
       size,
     }; // aqui manipulamos la info en los hijos
+
+ 
+    addCart(item)
+
   };
 
   const handlerBack = () => {
@@ -51,12 +56,18 @@ const navigate = useNavigate();
           {sizes && sizes.length > 0 && sizes[0].value !== null && (
             <SelectSize setSize={setSize} options={sizes} />
           )}
-          <ItemCount
+
+          {
+            isInCart(id)
+            ? <Link to={"/cart"} >  Terminar compra</Link>
+            :<ItemCount
             max={stock}
             counter={count}
             setCounter={setCount}
             handleAggregate={handleAggregate}
           />
+          }
+          
           <hr />
           <Button className="btn-outline-info mt-2" onClick={handlerBack} >Volver</Button>
         </div>
