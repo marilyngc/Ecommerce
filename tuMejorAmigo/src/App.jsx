@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { NavBar } from "./components/NavBar/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { Footer } from "./components/Footer/Footer";
-import { Inicio } from "./components/Inicio/Inicio";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import Page404 from "./components/404/Page404";
 import { CartProvider } from "./context/CartContext";
@@ -26,9 +25,9 @@ function App() {
         </Routes>
 
         <Routes>
-          <Route path="/" element={<Inicio />} />
+       
 
-          <Route path="/catalogo" element={<ItemListContainer />} />
+          <Route path="/" element={<ItemListContainer />} />
           <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
           <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart/>} />

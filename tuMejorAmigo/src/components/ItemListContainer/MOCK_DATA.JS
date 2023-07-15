@@ -68,7 +68,7 @@ export const MOCK_DATA = [
     id: 3,
     nombre: "Crema hidratante de chía",
     descripcion: "Lorem ipsum dolor sit amet, consectetur ",
-    precio:"2.700",
+    precio:"2.699",
     category: "hidratante",
     img: hidratante,
     stock:5,

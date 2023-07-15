@@ -11,11 +11,16 @@ export const ItemCard = ({ id, nombre, precio, img }) => {
 
         <Card.Body className="py-3 px-0">
           <Card.Title className="title">{nombre}</Card.Title>
-
+          {precio > 5.0 && (
+            <p style={{ fontWeight: 700, color: "red" }}>Envio gratis!</p>
+          )}
           <Card.Text className="price"> ${precio}</Card.Text>
         </Card.Body>
 
-        <Link to={`/detail/${id}`} className="text-decoration-none btn btn-outline-card">
+        <Link
+          to={`/detail/${id}`}
+          className="text-decoration-none btn btn-outline-card"
+        >
           Ver más
         </Link>
       </Card>

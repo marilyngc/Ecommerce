@@ -12,7 +12,7 @@ export const ItemDetail = ({
   descripcion,
   img,
   stock,sizes,
-  init = 0,
+  init = 1,
 }) => {
   const [count, setCount] = useState(init);
   const [size, setSize] = useState(null);
