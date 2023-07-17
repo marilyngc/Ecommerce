@@ -11,7 +11,7 @@ import { MdOutlineMedicalServices } from "react-icons/md";
 
 
 export const ItemListContainer = () => {
-  const { list } = useProducts();
+  const { products } = useProducts();
 
 
   return (
@@ -39,7 +39,7 @@ export const ItemListContainer = () => {
         </Nav.Item>
       </Nav>
 
-      <ItemList  items={list} />
+      <ItemList  items={products} />
     </div>
   );
 };

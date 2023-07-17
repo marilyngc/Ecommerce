@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { pedirDatos } from "../../HELPERS/pedirDatos";
+
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import {doc, getDoc} from "firebase/firestore"
+import { dataBase } from "../../firebase/config";
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState(null); //Iniciamos vacio
@@ -9,13 +11,19 @@ export const ItemDetailContainer = () => {
 const [loading, setLoading] = useState(true)
   useEffect(() => {
 setLoading(true)
-    pedirDatos
-      .then((res) => {
-        setItem(res.find((prod) => prod.id === Number(itemId)))
-      })
+   // 1 . armar la referencia (syn)sincronico
+const itemRef = doc(dataBase, "products", itemId)
+   // 2 - solicitar referencia (asyn)asincronico
+   getDoc(itemRef)
+   .then((doc) =>{
+setItem({
+  ...doc.data(),
+  id: doc.id
+})
 
-      .catch((err) => console.log(err))
-      .finally(() => setLoading(false))
+   })
+   .catch(e => console.log(e))
+   .finally(() =>setLoading(false) )
   }, [itemId]); // El array vacio es el montage para que no se renderise
   return (
     <div className="container">

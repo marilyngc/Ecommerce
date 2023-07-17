@@ -1,32 +1,29 @@
 import { useEffect, useState } from "react";
-import { pedirDatos } from "../HELPERS/pedirDatos";
+
 import { useParams } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
+
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { dataBase } from "../firebase/config";
 export const useProducts = () => {
   const [products, setProducts] = useState([]); //Iniciamos vacio
   const { categoryId } = useParams();
- 
-  useEffect(() => {
-    pedirDatos
-      .then((res) => {
-        if(!categoryId){
-            setProducts(res);
-        }
-        else{
-            setProducts(res.filter((item) => item.category === categoryId));
-        }
-       
-      })
 
-      .catch((err) => console.log(err));
+  useEffect(() => {
+    // 1 - armar una referencia  (sync) sincronico
+    const productsRef = collection(dataBase, "products");
+    const q = categoryId
+      ? query(productsRef, where("category", "==", categoryId))
+      : productsRef;
+    // 2 - peticion de esa referencia (async) asicronico
+    getDocs(q)
+      .then((resp) => {
+        const items = resp.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+        setProducts(items);
+      })
+      .catch((e) => console.log(e));
   }, [categoryId]); // El array vacio es el montage para que no se renderise
 
-  const [searchParams] = useSearchParams()
-  const  search = searchParams.get("search") 
-  const list = search
-                       ?products.filter(prod => prod.includes())
-                       : products
   return {
-    list
+    products,
   };
 };
