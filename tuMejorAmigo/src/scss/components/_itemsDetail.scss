@@ -1,0 +1,18 @@
+
+
+.button-primary {
+    @include button-variant(
+      $background: $colorTuMejorAmigo,
+      $border: $backgroundColor,
+      $color: color-contrast($colorTuMejorAmigo),
+      $hover-background: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($colorTuMejorAmigo, $btn-hover-bg-shade-amount), tint-color($colorTuMejorAmigo, $btn-hover-bg-tint-amount)),
+      $hover-border: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($backgroundColor, $btn-hover-border-shade-amount), tint-color($backgroundColor, $btn-hover-border-tint-amount)),
+      $hover-color: color-contrast($colorCelest),
+      $active-background: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($colorTuMejorAmigo, $btn-active-bg-shade-amount), tint-color($colorTuMejorAmigo, $btn-active-bg-tint-amount)),
+      $active-border: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($backgroundColor, $btn-active-border-shade-amount), tint-color($backgroundColor, $btn-active-border-tint-amount)),
+      $active-color: color-contrast($colorYellow),
+      $disabled-background: $colorTuMejorAmigo,
+      $disabled-border: $backgroundColor,
+      $disabled-color: color-contrast($colorBtn)
+    );
+  }

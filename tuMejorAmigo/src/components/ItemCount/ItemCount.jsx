@@ -5,32 +5,35 @@ const ItemCount = ({ max, counter, setCounter, handleAggregate }) => {
   const handlSubtract = () => counter > 0 && setCounter(counter - 1);
 
   return (
-    <div>
-      <Button
+    <div className=" d-flex row w-75 mt-3">
+      <div className="col-6 d-flex justify-content-between  rounded p-0 w-25 ">
+      <button
         variant="outline-primary"
         onClick={handlSubtract}
-        className={counter === 1 ? "btn btn-danger" : "btn-outline-info"}
+        className={counter === 1 ? "btn btn-danger" : " btn btn-outline-info "}
         disabled={counter === 1}
       >
         -
-      </Button>
-      <span variant="" className="border mx-4 px-5">
+      </button>
+      <span variant="" className=" m-2">
         {counter}
       </span>
-      <Button
+      <button
         variant="outline-primary"
         onClick={handlAdd}
         className={
-          counter === max ? " btn btn-outline-secondary" : "btn-outline-info"
+          counter === max ? " btn btn-outline-secondary" : " btn btn-outline-info "
         }
         disabled={counter === max}
       >
         +
-      </Button>
-      <br />
-      <Button className="btn-outline-info mt-2" onClick={handleAggregate}>
-        Agregar al carrito
-      </Button>
+      </button>
+      </div>
+      
+     
+      <button className=" btn button-primary col-6 ms-3 w-25" onClick={handleAggregate}>
+        Agregar 
+      </button>
     </div>
   );
 };

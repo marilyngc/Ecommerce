@@ -21,7 +21,7 @@ function App() {
 <CartProvider> {/*  context */}
 <BrowserRouter>
         <Routes>
-          <Route path="/detail/:itemId" element={<NavBar variant />} />
+           <Route path="/" element={<NavBar variant />} /> 
           <Route path="*" element={<NavBar />} />
         </Routes>
 

@@ -8,7 +8,7 @@ export const CartWidget = () => {
   return (
     <Link to={"/cart"} className="nav-link-cart d-block p-2   ">
       {" "}
-      <BsBagHeart className="fs-4" /> <span className="text-light rounded-4  px-2 py-1"   style={{backgroundColor:'$colorBtn'}}>{fullStock()} </span> {" "}
+      <BsBagHeart className="fs-4" /> <span className="text-light rounded-4  px-2 py-1"   style={{color:"black"}}>{fullStock()} </span> {" "}
     </Link>
   );
 };

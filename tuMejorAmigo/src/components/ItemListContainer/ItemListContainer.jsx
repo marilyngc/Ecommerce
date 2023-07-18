@@ -20,7 +20,7 @@ export const ItemListContainer = () => {
   
       <Nav className="justify-content-center mt-4 py-4 " activeKey="/catalogo">
         <Nav.Item className="me-4  ">
-          <Link to="/catalogo" className=" link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none"> Todos</Link>
+          <Link to="/" className=" link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none"> Todos</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
           <Link to="/catalogo/combos" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Combos</Link>

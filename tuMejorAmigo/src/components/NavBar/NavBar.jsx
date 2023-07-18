@@ -17,7 +17,7 @@ export function NavBar({variant = false}) {
     <>
    
       {[  'xxl'].map((expand) => (
-        <Navbar key={expand}  expand={expand } fixed={variant ? undefined : 'top'}  className= " bg-body-transparent px-3 shadow">
+        <Navbar key={expand}  expand={expand } fixed={variant ? 'top': undefined }  className= " bg-body-transparent px-3 shadow">
           <Container fluid>
             <Link to="/">   <Image src={logoJehnny}  style={{ width:"130px", height: "35px"}}  /> </Link>
            

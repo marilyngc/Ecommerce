@@ -40,7 +40,7 @@ if (cart.length === 0) {
     <hr />
 
     <form  onSubmit={handleSubmit}>
-        <input value={values.name} onChange={handleInputChange} name="name" type="text" placeholder="Nombre"  className="form-control my-2"/>
+        <input value={values.name} onChange={handleInputChange} name="name" type="text" placeholder="Nombre"  className="form-control my-2 bg-dark text-light"/>
         <input value={values.direction} onChange={handleInputChange} name="Direction" type="text" placeholder="Direccion"  className="form-control my-2" />
         <input value={values.email} onChange={handleInputChange} name="email" type="text" placeholder="Email"  className="form-control my-2"/>
         <button className="btn btn-primary">Enviar</button>

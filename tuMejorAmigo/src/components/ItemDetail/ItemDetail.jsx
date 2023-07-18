@@ -42,18 +42,18 @@ const navigate = useNavigate();
   }
  
   return (
-    <Card className="card mb-3 mt-5 " style={{ width: "90rem" }}>
+    <Card className="card  m-5  " style={{ width: "90rem", border:"none"}}>
       <div className="row g-0">
-        <div className="col-md-4">
-          <Card.Img src={img} className="col" />
+        <div className="col-md-4 w-25">
+          <Card.Img src={img} className="col   "/>
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8  ms-5 ">
           <Card.Body className="col">
-            <Card.Title>{nombre}</Card.Title>
+            <Card.Title className="fw-bold">{nombre}</Card.Title>
             <Card.Text>{descripcion}</Card.Text>
-            <Card.Text> ${precio}</Card.Text>
-          </Card.Body>
-          {sizes && sizes.length > 0 && sizes[0].value !== null && (
+            <Card.Text className="fs-4"> $ {precio}</Card.Text>
+<hr />
+            {sizes && sizes.length > 0 && sizes[0].value !== null && (
             <SelectSize setSize={setSize} options={sizes} />
           )}
 
@@ -69,7 +69,9 @@ const navigate = useNavigate();
           }
           
           <hr />
-          <Button className="btn-outline-info mt-2" onClick={handlerBack} >Volver</Button>
+          <Button className="btn button-primary  mt-2" onClick={handlerBack} >Volver</Button>
+          </Card.Body>
+         
         </div>
       </div>
     </Card>
