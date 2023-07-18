@@ -17,6 +17,7 @@ export const ItemListContainer = () => {
   return (
     <div className="container-fluid p-0  " >
       <ItemFrontPage/>
+  
       <Nav className="justify-content-center mt-4 py-4 " activeKey="/catalogo">
         <Nav.Item className="me-4  ">
           <Link to="/catalogo" className=" link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none"> Todos</Link>

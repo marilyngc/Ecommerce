@@ -12,6 +12,7 @@ import Page404 from "./components/404/Page404";
 import { CartProvider } from "./context/CartContext";
 import { DarkModerProvider } from "./context/DarkModeContext";
 import Cart from "./components/Cart/Cart";
+import { Checkout } from "./components/Checkout/Checkout";
 function App() {
 
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
           <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart/>} />
+          
+          <Route  path="/checkout" element={<Checkout/>}/>
           {/*    <Route path="*" element={<Navigate to={"/"}/>}/> */}
           <Route path="*" element={<Page404 />} />
         </Routes>
