@@ -1,15 +1,19 @@
-import { addDoc, collection, updateDoc } from "firebase/firestore"
-import  MOCK_DATA  from "../components/ItemListContainer/MOCK_DATA.json" assert {type:"json"}
-import { dataBase } from "./config.js"
-const productsRef = collection(dataBase,"products")
+import { addDoc, collection } from "firebase/firestore";
+import MOCK_DATA from "../components/ItemListContainer/MOCK_DATA.json";
+import { dataBase } from "./config.js";
 
+const productsRef = collection(dataBase, "products");
 
-MOCK_DATA.forEach((item) => {
-    delete item.id
+const addProductsToFirestore = async () => {
+  try {
+    for (const item of MOCK_DATA) {
+      delete item.id;
+      await addDoc(productsRef, item);
+    }
+    console.log("Productos agregados exitosamente a Firestore");
+  } catch (error) {
+    console.error("Error al agregar productos a Firestore:", error);
+  }
+};
 
-    addDoc(productsRef,item)
-
-/*     updateDoc(productsRef,item)   PARA ACTUALIZAR DOCUMENTO  */ 
-
-})
-
+addProductsToFirestore();

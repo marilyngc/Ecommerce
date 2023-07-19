@@ -13,7 +13,7 @@ export const CartProvider = ({ children }) => {
     return cart.reduce((acc, prod) => acc + prod.precio * prod.count, 0);
   };
 
-  const modifyQuantity = () =>{
+  const modifyQuantity = (id) =>{
     const newCart = cart.slice()
     const item = newCart.find(i => i.id === id)
 
