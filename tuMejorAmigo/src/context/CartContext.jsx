@@ -7,18 +7,18 @@ export const CartProvider = ({ children }) => {
 
   const addCart = (item) => {
     setCart([...cart, item]);
+ 
   };
 
-  const fullPurchase = () => {
-    return cart.reduce((acc, prod) => acc + prod.precio * prod.count, 0);
-  };
+  const fullPurchase = () => cart.reduce((acc, prod) => acc + prod.precio * prod.count, 0);
+  
 
-  const modifyQuantity = (id) =>{
+/*   const modifyQuantity = (id) =>{
     const newCart = cart.slice()
     const item = newCart.find(i => i.id === id)
 
     setCart(newCart)
-  }
+  } */
   const isInCart = (id) => cart.find((prod) => prod.id === id);
   const emptyCart = () => setCart([]);
   const deleteCart = (id) => setCart(cart.filter((prod) => prod.id !== id));

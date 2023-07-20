@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom"
 import { addDoc, collection} from "firebase/firestore"
 import {dataBase } from "../../firebase/config"
 export const Checkout = () =>{
-    const {cart,fullPurcharse} = useContext(CartContext)
+    const {cart,fullPurchase} = useContext(CartContext)
 const [values, setValues] = useState({
     name: "",
     direction: "",
@@ -38,12 +38,13 @@ const handleSubmit = (e) => {
     const order = {
         customer:values,
         items:cart,
-        total: fullPurcharse,
+        total: fullPurchase()
+        ,
  
     }
 
     const orderRef = collection(dataBase, "orders")
-
+console.log(order)
     addDoc(orderRef,order)
     .then((doc) => console.log(doc.id))
     .catch(err => console.log(err))
