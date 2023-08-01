@@ -3,36 +3,39 @@
   //background: #e0e0e0;
 }
 
+  
+
+
 
 
 h1 {
   display: inline-block;
-  color: white;
+  color:$colorTitle;
   font-family: $font-family-catalogue;
-  font-size: 9rem;
-  text-shadow: 0.03em 0.03em 0 #57350E;
+  font-size: 13em;
+  text-shadow: 0.02em 0.02em 0 rgb(233, 232, 232);
 
 }
 h1:after {
   content: attr(data-shadow);
   position: absolute;
-  top: .75em;
-  left: 0.73em;
+  top: .130em;
+  left: .130em;
   z-index: -1;
   text-shadow: none;
   background-image: linear-gradient(
     45deg,
     transparent 45%,
-    rgb(255, 255, 255) 45%,
-    rgb(253, 249, 255) 55%,
+    black 45%,
+    black 55%,
     transparent 0
-  );
+    );
   background-size: 0.05em 0.05em;
-
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
--webkit-background-clip: text;
 
-  animation: shad-anim 40s linear infinite;
+
+  animation: shad-anim 15s linear infinite;
 }
 
 @keyframes shad-anim {
@@ -47,52 +50,6 @@ h1:after {
 
 
 
-.shop-card {
-  background: transparent;
-
-  display: flex;
-  flex-direction: column;
-  color: rgba(54, 57, 61, 0.8);
-  height: fit-content;
-
-  padding: 12px;
-  text-align: center;
-
-  border-radius: 12px;
-  position: relative;
-  transition: all 0.1s ease;
-  &:hover {
-    border: 2px solid $colorBtn;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
-  }
-  .title {
-    font-weight: 500;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  .price {
-    font-size: 18px;
-    letter-spacing: 2px;
-  }
-}
-
-.imgHidden {
-  height: 150px;
-  overflow: hidden;
-  border-radius: 10px;
-  &img {
-    height: 100%;
-    object-fit: contain;
-
-    margin: 0 auto;
-    box-shadow: 4px 4px 8px 2px rgb(255, 255, 255),
-      -4px -4px 8px 0 rgba(0, 0, 0, 0.3),
-      inset -4px -4px 8px 0 rgb(255, 255, 255),
-      inset 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
-  }
-}
 
 .btn-outline-card {
   @include button-outline-variant(
@@ -113,3 +70,5 @@ h1:after {
     transition: all;
   }
 }
+
+

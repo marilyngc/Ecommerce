@@ -59,7 +59,7 @@ const navigate = useNavigate();
 
           {
             isInCart(id)
-            ? <Link to={"/cart"} >  Terminar compra</Link>
+            ? <Link to={"/cart"} >           <Button className="btn button-primary  mt-2"  >Terminar compra </Button></Link>
             :<ItemCount
             max={stock}
             counter={count}

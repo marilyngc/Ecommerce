@@ -15,7 +15,7 @@ export const ItemListContainer = () => {
 
 
   return (
-    <div className="container-fluid p-0  " >
+    <main className="container-fluid p-0  " >
       <ItemFrontPage/>
   
       <Nav className="justify-content-center mt-4 py-4 " activeKey="/catalogo">
@@ -41,6 +41,6 @@ export const ItemListContainer = () => {
       </Nav>
 
       <ItemList  items={products} />
-    </div>
+    </main>
   );
 };

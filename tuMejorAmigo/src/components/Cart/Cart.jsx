@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { PiTrashBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const Cart = () => {
   const { cart, fullPurchase, emptyCart, deleteCart } = useContext(CartContext);
@@ -42,7 +43,7 @@ const Cart = () => {
         <button onClick={emptyCart} className="btn btn-danger">
           Vaciar carrito
         </button>
-        <Link className="btn btn-succes" to={"/checkout"}> Terminar mi compra</Link>
+        <Link className="btn btn-succes" to={"/checkout"}>    <Button className="btn button-primary  "  >Terminar compra </Button></Link>
       </div>
     </div>
   );

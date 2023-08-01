@@ -10,7 +10,7 @@ export const ItemList = ({ items }) => {
    
       <div className="container row justify-content-center   ">
       {items.length === 0
-        ? "Cargando datos..."
+        ? <div class="custom-loader"></div>
         : items.map(
             (elem) => <ItemCard  key={elem.id} {...elem} /> // el map retorna un nuevo array
           )}

@@ -26,10 +26,10 @@ setItem({
    .finally(() =>setLoading(false) )
   }, [itemId]); // El array vacio es el montage para que no se renderise
   return (
-    <div className="container">
+    <div className="container h-100  my-5  d-flex justify-content-center">
 {
   loading
-  ? <h2>Cargando....</h2>
+  ? <div class="custom-loader my-5 "></div>
   : <ItemDetail{...item} />
 }
     </div>

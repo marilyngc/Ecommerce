@@ -5,7 +5,7 @@ export const ListNetworks = () => {
   const Network = Networks.map((icon) => (
     <li key={icon.id}  className="m-2">
     <a
-      className="rounded-5 btn btn-outline-info"
+      className="rounded-5 btn btn-outline-info networkStyles"
       href="#"
       target="_blank"
     >

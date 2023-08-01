@@ -1,16 +1,20 @@
 import { Image } from "react-bootstrap";
 import frontImage from "../../assets/products/pedestal.jpg";
-
+import front from "../../assets/products/bottonFlower.jpg"
 export const ItemFrontPage = () => {
   return (
-    <div className="card  position-relative" style={{ height: "70rem" }}>
-      <Image src={frontImage} fluid className="h-100" />
-      <div className="card-img-overlay w-50 mt-5 ms-5  p-5 position-absolute top-0 start-50 translate-middle-x  ">
-        <h1 data-shadow="Descubre Nuestros Productos" className="p-5">
+    <div className="card  position-relative " style={{ height: "100vh", with:"100vh"}}>
+    
+      <Image src={front} fluid className="h-100   " />  
+     <div className="card-img-overlay position-absolute me-5 top-50 start-50 translate-middle">
+     <h1 data-shadow="Skincare" className="">
       
-          Descubre Nuestros Productos
-        </h1>
-      </div>
+      Skincare
+    </h1>
+     </div>
+    
+
+    
     </div>
   );
 };

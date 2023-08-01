@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./scss/styles.scss";
 import "./App.css";
@@ -22,6 +22,7 @@ function App() {
 <BrowserRouter>
         <Routes>
            <Route path="/" element={<NavBar variant />} /> 
+           <Route path="/catalogo/:categoryId"  element={<NavBar variant />} />
           <Route path="*" element={<NavBar />} />
         </Routes>
 

@@ -10,7 +10,7 @@ const ItemCount = ({ max, counter, setCounter, handleAggregate }) => {
       <button
         variant="outline-primary"
         onClick={handlSubtract}
-        className={counter === 1 ? "btn btn-danger" : " btn btn-outline-info "}
+        className={counter === 1 ? "btn btn-outline-secondary" : " btn btn-outline-info "}
         disabled={counter === 1}
       >
         -
