@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import frontImage from "../../assets/products/pedestal.jpg";
+
 import front from "../../assets/products/bottonFlower.jpg"
 export const ItemFrontPage = () => {
   return (

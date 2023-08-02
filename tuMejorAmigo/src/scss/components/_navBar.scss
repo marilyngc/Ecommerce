@@ -1,20 +1,33 @@
 .navbar {
 background-color: transparent;
-    .nav-item {
-      margin: 1rem 2rem 1rem 0;
+   
+   
+    
    
       .nav-link {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 16px;
-        margin: 0.5rem;
+        //text-transform: uppercase;
+       // font-weight: 700;
+       // font-size: 20px;
+       
+       margin: 0.1rem;
         color:$colorTitle;
       }
-    }
+    
   }
   .nav-link-cart {
     font-weight: 700;
     color: $colorTitle;
+    margin: 0.1rem;
+    text-decoration: none;
+    padding-top: 70px;
+    &span{
+   
+
+      font-size: 1.2rem;
+     
+    }
+ 
+   
   }
 
   
