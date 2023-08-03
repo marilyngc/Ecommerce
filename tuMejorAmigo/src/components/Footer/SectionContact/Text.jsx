@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
-import logoJehnny from "../../../assets/logo/imagen2.png";
+import logoJehnny from "../../../assets/logo/jeh.png";
 export const Text = () => {
     return(
         <div className="col-xs-12 col-lg-4 ">
