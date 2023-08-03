@@ -29,7 +29,7 @@ setItem({
     <div className="container h-100  my-5  d-flex justify-content-center">
 {
   loading
-  ? <div class="custom-loader my-5 "></div>
+  ? <div className="custom-loader my-5 "></div>
   : <ItemDetail{...item} />
 }
     </div>

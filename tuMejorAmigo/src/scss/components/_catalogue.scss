@@ -1,13 +1,6 @@
-#sectionCatalogue {
-  background-color: white;
-  //background: #e0e0e0;
+.section1{
+  height: 100vh;
 }
-
-  
-
-
-
-
 h1 {
   display: inline-block;
   color:$colorTitle;
@@ -19,8 +12,8 @@ h1 {
 h1:after {
   content: attr(data-shadow);
   position: absolute;
-  top: .130em;
-  left: .130em;
+  top: .135em;
+  left: 2.53em;
   z-index: -1;
   text-shadow: none;
   background-image: linear-gradient(
@@ -110,4 +103,22 @@ h1:after {
   }
 }
 
+@media (max-width: 768px) {
+  .section1{
+    height: 50vh;
+   
+    .card-img-overlay h1 {
+
+      font-size: 5em;
+      &:after {
+      
+        top: .270em;
+        left: .63em;
+      }
+    }
+    .button{
+      font-size: 0.5em
+    }
+  }
+ };
 

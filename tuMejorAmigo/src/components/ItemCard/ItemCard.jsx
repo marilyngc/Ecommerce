@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export const ItemCard = ({ id, nombre, precio, img }) => {
   return (
     <>
-      <div className="card cardShop m-lg-3 " style={{ width: "15rem" }} >
-        <div class="card-img">
-          <Card.Img variant="top" src={img} className="h-100 " />
+      <div className="card cardShop m-lg-3  m-3">
+        <div className="card-img">
+          <Card.Img variant="top" src={img} className="h-100 w-100" />
         </div>
 
 

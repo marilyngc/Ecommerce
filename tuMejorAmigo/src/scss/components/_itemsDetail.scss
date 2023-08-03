@@ -7,10 +7,10 @@
       $color: color-contrast($colorTuMejorAmigo),
       $hover-background: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($colorTuMejorAmigo, $btn-hover-bg-shade-amount), tint-color($colorTuMejorAmigo, $btn-hover-bg-tint-amount)),
       $hover-border: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($backgroundColor, $btn-hover-border-shade-amount), tint-color($backgroundColor, $btn-hover-border-tint-amount)),
-      $hover-color: color-contrast($colorCelest),
+      $hover-color: color-contrast($greenColor),
       $active-background: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($colorTuMejorAmigo, $btn-active-bg-shade-amount), tint-color($colorTuMejorAmigo, $btn-active-bg-tint-amount)),
       $active-border: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($backgroundColor, $btn-active-border-shade-amount), tint-color($backgroundColor, $btn-active-border-tint-amount)),
-      $active-color: color-contrast($colorYellow),
+      $active-color: color-contrast($greenColor),
       $disabled-background: $colorTuMejorAmigo,
       $disabled-border: $backgroundColor,
       $disabled-color: color-contrast($colorBtn)

@@ -9,11 +9,11 @@ const link = [
 
 export const NavLink = () => {
   return (
-    <ListGroup horizontal className="  mx-3 ">
+    <ListGroup horizontal className="  ms-2 mx-lg-3 ">
       {link.map((text, index) => (
-        <Link className="nav-link p-2 " key={index} to={text.link}>
+        <Link className="nav-link  " key={index} to={text.link}>
           {" "}
-          {text.nav}{" "}
+          {text.nav}{" Ingresar"}
         </Link>
       ))}
     </ListGroup>
