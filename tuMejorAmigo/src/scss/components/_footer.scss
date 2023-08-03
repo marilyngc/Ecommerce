@@ -1,9 +1,9 @@
 .btn-outline-info {
     @include button-outline-variant(
-      $colorBtn,
+     $colorVioletDark,
       $color-hover: color-contrast($backgroundColor),
-      $active-background: $colorBtn,
-      $active-border: $colorBtn,
+      $active-background:$colorVioletDark,
+      $active-border:$colorVioletDark,
       $active-color: color-contrast($backgroundColor)
     
     );
@@ -15,7 +15,7 @@
     font-size: 1.2rem;
   }
   .footerRedes{
-    background-color:$colorTuMejorAmigoDark;
+    background-color:$colorTitle;
  
   }
   
@@ -31,7 +31,7 @@
   ul li a{
     color: black;
   &:hover{
-    color:  #8c524c;
+    color: $colorVioletDark;
     
     }
   }

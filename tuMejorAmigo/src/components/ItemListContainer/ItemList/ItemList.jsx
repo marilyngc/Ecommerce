@@ -6,7 +6,7 @@ import { ItemCard } from "../../ItemCard/ItemCard";
 export const ItemList = ({ items }) => {
 
   return (
-    <section id="sectionCatalogue" className=" h-100  my-5 py-5 d-flex justify-content-center " >
+    <section id="sectionCatalogue" className=" h-100  my-1  d-flex justify-content-center " >
    
       <div className="container row justify-content-center   ">
       {items.length === 0

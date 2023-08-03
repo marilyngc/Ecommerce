@@ -47,6 +47,45 @@ h1:after {
   }
 }
 
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color:$colorTitle;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid$colorTitle;
+  &:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #c8bce6;
+    box-shadow: 4px 5px 17px -4px $colorVioletDark;
+  }
+}
+
+
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color:$colorTitle;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%;
+}
 
 
 
