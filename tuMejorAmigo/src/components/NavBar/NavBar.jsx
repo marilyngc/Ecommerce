@@ -3,7 +3,7 @@ import { NavLink } from "./NavLink"
 
 import { Container, Form, Nav, Navbar, Offcanvas, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logoJehnny from "../../assets/logo/imagen2.png";
+import logoJehnny from "../../assets/logo/jeh.png";
 
 
 
