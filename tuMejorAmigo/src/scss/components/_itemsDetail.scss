@@ -1,18 +1,126 @@
+.cardItems {
+  background-color:  #f7f7f8;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+ border: none;
+  border-radius: 5px;
+  overflow: hidden;
+
+  
+.buttonAdd {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  width: 95.02px;
+  height: 42.66px;
+  border: none;
+  background-color:$colorVioletDark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAdd .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+.buttonAdd:hover .span-mother {
+  position: absolute;
+}
+
+.buttonAdd:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+.buttonAdd .span-mother span:nth-child(1) {
+  transition: .2s;
+}
+
+.buttonAdd .span-mother span:nth-child(2) {
+  transition: .3s;
+}
+
+.buttonAdd .span-mother span:nth-child(3) {
+  transition: .4s;
+}
+
+.buttonAdd .span-mother span:nth-child(4) {
+  transition: .5s;
+}
+
+.buttonAdd .span-mother span:nth-child(5) {
+  transition: .6s;
+}
+
+.buttonAdd .span-mother span:nth-child(6) {
+  transition: .7s;
+}
+.buttonAdd .span-mother span:nth-child(7) {
+  transition: .8s;
+}
+
+.buttonAdd .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.buttonAdd .span-mother2 span {
+  transform: translateY(-1.3em);
+}
+
+.buttonAdd:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+.buttonAdd .span-mother2 span {
+  transition: .2s;
+}
+
+.buttonAdd .span-mother2 span:nth-child(2) {
+  transition: .3s;
+}
+
+.buttonAdd .span-mother2 span:nth-child(3) {
+  transition: .4s;
+}
+
+.buttonAdd .span-mother2 span:nth-child(4) {
+  transition: .5s;
+}
+
+.buttonAdd .span-mother2 span:nth-child(5) {
+  transition: .6s;
+}
+
+.buttonAdd .span-mother2 span:nth-child(6) {
+  transition: .7s;
+}
+.buttonAdd .span-mother2 span:nth-child(7) {
+  transition: .8s;
+}
+}
 
 
 .button-primary {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  width: max-content;
+  height: 42.66px;
+  padding: 10px 20px;
     @include button-variant(
-      $background: $colorTuMejorAmigo,
-      $border: $backgroundColor,
-      $color: color-contrast($colorTuMejorAmigo),
-      $hover-background: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($colorTuMejorAmigo, $btn-hover-bg-shade-amount), tint-color($colorTuMejorAmigo, $btn-hover-bg-tint-amount)),
-      $hover-border: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($backgroundColor, $btn-hover-border-shade-amount), tint-color($backgroundColor, $btn-hover-border-tint-amount)),
+      $background: $colorVioletDark,
+      $border: $colorVioletDark,
+      $color: color-contrast($colorVioletDark),
+      $hover-background: if(color-contrast($colorVioletDark) == color-contrast-light($colorVioletDark), shade-color($colorVioletDark, $btn-hover-bg-shade-amount), tint-color($colorVioletDark, $btn-hover-bg-tint-amount)),
+      $hover-border: if(color-contrast($colorVioletDark) == color-contrast-light($colorVioletDark), shade-color($colorVioletDark, $btn-hover-border-shade-amount), tint-color($colorVioletDark, $btn-hover-border-tint-amount)),
       $hover-color: color-contrast($greenColor),
-      $active-background: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($colorTuMejorAmigo, $btn-active-bg-shade-amount), tint-color($colorTuMejorAmigo, $btn-active-bg-tint-amount)),
-      $active-border: if(color-contrast($colorTuMejorAmigo) == color-contrast-light($colorTuMejorAmigo), shade-color($backgroundColor, $btn-active-border-shade-amount), tint-color($backgroundColor, $btn-active-border-tint-amount)),
+      $active-background: if(color-contrast($colorVioletDark) == color-contrast-light($colorVioletDark), shade-color($colorVioletDark, $btn-active-bg-shade-amount), tint-color($colorVioletDark, $btn-active-bg-tint-amount)),
+      $active-border: if(color-contrast($colorVioletDark) == color-contrast-light($colorVioletDark), shade-color($colorVioletDark, $btn-active-border-shade-amount), tint-color($colorVioletDark, $btn-active-border-tint-amount)),
       $active-color: color-contrast($greenColor),
-      $disabled-background: $colorTuMejorAmigo,
-      $disabled-border: $backgroundColor,
+      $disabled-background: $colorVioletDark,
+      $disabled-border: $colorVioletDark,
       $disabled-color: color-contrast($colorBtn)
     );
   }

@@ -42,7 +42,7 @@ const navigate = useNavigate();
   }
  
   return (
-    <Card className="card  m-5  " style={{ width: "90rem", border:"none"}}>
+    <Card className="cardItems  m-5 p-4 " style={{ width: "90rem"}}>
       <div className="row g-0">
         <div className="col-md-4 w-25">
           <Card.Img src={img} className="col   "/>
@@ -51,7 +51,7 @@ const navigate = useNavigate();
           <Card.Body className="col">
             <Card.Title className="fw-bold">{nombre}</Card.Title>
             <Card.Text>{descripcion}</Card.Text>
-            <Card.Text className="fs-4"> $ {precio}</Card.Text>
+            <Card.Text className="fs-4"> ${precio}</Card.Text>
 <hr />
             {sizes && sizes.length > 0 && sizes[0].value !== null && (
             <SelectSize setSize={setSize} options={sizes} />
@@ -59,7 +59,8 @@ const navigate = useNavigate();
 
           {
             isInCart(id)
-            ? <Link to={"/cart"} >           <Button className="btn button-primary  mt-2"  >Terminar compra </Button></Link>
+            ? <Link to={"/cart"} >         
+             <Button className="btn button-primary  mt-4"  >Terminar compra </Button></Link>
             :<ItemCount
             max={stock}
             counter={count}
