@@ -21,8 +21,8 @@ const Cart = () => {
   return (
     <div className="container    my-5">
       
-<div className=" border  w-50 my-3"> 
-<h2>Tu compra</h2>
+<div className="  w-50 my-3"> 
+<h2 className="m-3 fs-4 fw-bold">Producto</h2>
       {cart.map((prod) => (
        
          
@@ -58,7 +58,7 @@ const Cart = () => {
       ))}
 </div>
 
-      <div>
+      <div className="m-4">
         <h5 className="fw-bold">Total: ${fullPurchase()}</h5>
         <hr />
         <button onClick={emptyCart} className="btn btn-danger">
