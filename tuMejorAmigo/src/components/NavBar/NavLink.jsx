@@ -4,7 +4,7 @@ import {BsFillPersonFill} from "react-icons/bs"
 const link = [
 
  /*  { id: 1, nav: " productos", link: "/" }, */
-  {id:2, nav: <BsFillPersonFill  style={{  width: "1.7rem", height:"1.7rem" }} /> , link: "/iniciarSesion"}
+  {id:2, nav: <BsFillPersonFill  style={{  width: "1.7rem", height:"1.7rem" }} /> , link: "/login"}
 ];
 
 export const NavLink = () => {

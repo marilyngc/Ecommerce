@@ -13,6 +13,7 @@ import { LoginScreen } from "../components/LoginScreen/LoginScreen";
 import { useContext } from "react";
 import { RegisterScreen } from "../components/LoginScreen/RegisterScreen";
 
+
 export const AppRouter = () => {
     const { user } = useContext(AuthContext)
     return (
@@ -24,7 +25,7 @@ export const AppRouter = () => {
                     <>
                         <Route path="/admin" element={<Admin />} />
                         <Route path="/profile" element={<Profile />} />
-                        <Route path="/cart" element={<Cart />} />
+                  
                     </>
                     :
                     <>
@@ -36,7 +37,7 @@ export const AppRouter = () => {
 
             <Routes>
 
-
+            <Route path="/cart" element={<Cart />} />
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
                 <Route path="/detail/:itemId" element={<ItemDetailContainer/>} />
@@ -44,7 +45,7 @@ export const AppRouter = () => {
 
                 <Route path="/checkout" element={<Checkout />} />
                 {/*    <Route path="*" element={<Navigate to={"/"}/>}/> */}
-                <Route path="*" element={<Page404 />} />
+          {/*       <Route path="*" element={<Page404 />} /> */}
                 <Route path="/login" element={<LoginScreen/>} />
                 <Route path="/register" element={<RegisterScreen/>} />
                 
