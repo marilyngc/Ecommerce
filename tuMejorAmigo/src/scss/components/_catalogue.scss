@@ -102,6 +102,26 @@ h1:after {
     transition: all;
   }
 }
+@media (min-width: 1200px) {
+  .section1{
+    height: 100vh;
+   
+    .card-img-overlay h1 {
+
+      font-size: 10em;
+      &:after {
+      
+        top: .165em;
+        left: 2.25em;
+      }
+    }
+    .button{
+      font-size: 0.8em;
+      
+      
+    }
+  }
+ };
 
 @media (max-width: 768px) {
   .section1{

@@ -12,9 +12,10 @@ export const ItemFrontPage = () => {
       
       Skincare
     </h1>
-    <div className=" d-flex justify-content-center  pt-lg-5 mt-lg-5">
+    <div className=" d-flex justify-content-center pt-lg-5 mt-lg-5">
     <button className="button mt-lg-5 mt-4    ">
     Contáctame
+    
 </button>
     </div>
   
