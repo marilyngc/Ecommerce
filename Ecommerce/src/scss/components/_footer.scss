@@ -1,0 +1,37 @@
+.btn-outline-info {
+    @include button-outline-variant(
+     $colorVioletDark,
+      $color-hover: color-contrast($backgroundColor),
+      $active-background:$colorVioletDark,
+      $active-border:$colorVioletDark,
+      $active-color: color-contrast($backgroundColor)
+    
+    );
+  }
+  .networkStyles{
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+  .footerRedes{
+    background-color:$colorTitle;
+ 
+  }
+  
+  .footerLinks ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    height: 5px;
+    width: 50px;
+    background: #2b14ff;
+  }
+  ul li a{
+    color: black;
+  &:hover{
+    color: $colorVioletDark;
+    
+    }
+  }

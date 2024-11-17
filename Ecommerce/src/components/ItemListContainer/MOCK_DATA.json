@@ -1,0 +1,352 @@
+
+
+
+
+ [
+  {
+   "id": 1,
+   "nombre": "Crema hidratante + Serum + Leche limpiadora",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio": "7.599",
+    "category": "combos",
+    "img":"../../assets/products/combo.jpg",
+    "stock":5,
+    "sizes" : [
+      {
+        "value": "S",
+        "label": "Small"
+      },
+      {
+        "value": "M",
+        "label": "Medium"
+      },
+      {
+        "value": "L",
+        "label": "Largue"
+      }
+     ]
+  },
+  {
+   "id": 2,
+   "nombre": "Contorno de ojos",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio":"3.999",
+    "category": "contorno",
+    "img": "../../assets/products/contornoDeOjos.jpg",
+    "stock":5,
+    "sizes":  [
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 3,
+   "nombre": "Crema hidratante de chía",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio":"2.699",
+    "category": "hidratante",
+    "img":"../../assets/products/hidratante.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 4,
+   "nombre": "Crema hidratante de quinoa",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio": "3.999",
+    "category": "hidratante",
+    "img": "../../assets/products/hidratante1.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+
+  {
+   "id": 5,
+   "nombre": "Serum balance",
+   "descripcion": "El Serum Balance es un concentrado de niacinamida (vitamina B3) + ácido salicílico, potenciados con gluconato de zinc y raíz de Bardana. Con efecto antiséptico y antibacteriano para la piel. ",
+    "precio":"7.299",
+    "category": "serum",
+    "img":"../../assets/products/serum.jpg",
+    "stock":2,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 6,
+   "nombre": "Protector solar +50",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio":"4.345",
+    "category": "protector",
+    "img": "../../assets/products/sunProtect.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 7,
+   "nombre": "Protector solar con color",
+   "descripcion": "Libre de parabenos. Los productos libres de parabenos son una buena opción para el cuidado de pieles sensibles o para quienes eligen productos sin conservantes artificial",
+    "precio":"4.306",
+    "category": "protector",
+    "img": "../../assets/products/sunProtects.jpg",
+    "stock":1,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 8,
+   "nombre": "Combo leche limpiadora + contorno de ojos ",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio": "5.999",
+    "category": "combos",
+    "img": "../../assets/products/combos2.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 9,
+   "nombre": "Mascarilla purificante  ",
+   "descripcion": "Nuestra Mascarilla Purificante ofrece una hidratación intensa, reduce y previene el acné, mejora la textura y tono de la piel, aporta luminosidad y firmeza, purifica y equilibra la piel. ¡Descubre una piel más radiante y saludable!",
+    "precio": "7.699",
+    "category": "hidratante",
+    "img":"../../assets/products/hidratante2.jpg",
+    "stock":6,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 10,
+   "nombre": "Serum antiage",
+   "descripcion": "El Serum eseal para quienes buscan prevenir o suavizar líneas, y mejorar turgencia, firmeza y elasticidad. Además, brinda humectación intensa, por lo que es uno de los preferidos de quienes buscan hidratación 100 % oil-free. ",
+    "precio": "7.299",
+    "category": "serum",
+    "img": "../../assets/products/serum1.jpg",
+    "stock":5,
+    "sizes" : [
+      {
+        "value": "S",
+        "label": "Small"
+      },
+      {
+        "value": "M",
+        "label": "Medium"
+      },
+      {
+        "value": "L",
+        "label": "Largue"
+      }
+     ]
+  },
+  {
+   "id": 11,
+   "nombre": "Protector solar + labial humectante",
+   "descripcion": "Lorem ipsum dolor sit amet, consectetur ",
+    "precio": "3.500",
+    "category": "combos",
+    "img": "../../assets/products/combo3.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 12,
+   "nombre": " Contorno de ojos y boca con extracto del bulbo ",
+   "descripcion": "Su composición contiene una gran concentración de los activos naturales más innovadores que, aplicados sobre la piel de forma simultánea, tratan ojeras, párpados caídos, líneas de expresión, dinámicas y estáticas, pérdida de elasticidad, bolsas, inflamación, pigmentación desigual y manchas.  ",
+    "precio": "3.050",
+    "category": "contorno",
+    "img": "../../assets/products/contorno1.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 13,
+   "nombre": "Serum iluminador",
+   "descripcion": "El Serum es un poderoso humectante multivitamínico creado a partir de extractos de la fruta de Limón, Manzana y Semillas de Uva.",
+    "precio": "2.700",
+    "category": "serum",
+    "img": "../../assets/products/serum2.jpg",
+    "stock":3,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 14,
+   "nombre": "Crema gel hidratante UV  ",
+   "descripcion": "En términos de protección UV, la Vitamina E puede absorber los rayos UVB dando protección. Con la adición de vitamina C, ambos pueden proporcionar una mejor defensa contra los efectos de los rayos UV y ayudar a prevenir y reducir el envejecimiento prematuro de los radicales libres causados por el daño de los rayos UV.  ",
+    "precio": "7.399",
+    "category": "hidratante",
+    "img": "../../assets/products/protector3.jpg",
+    "stock":5,
+    "sizes":[
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      },
+      {
+        "value": null,
+        "label": null
+      }
+     ]
+  },
+  {
+   "id": 15,
+   "nombre":"Protector solar en gel",
+   "descripcion": "Disfrutá sin preocupaciones del verano, protegiendo la piel de quienes más querés de los rayos ultravioletas del sol.    ",
+    "precio": "6.958",
+    "category": "protector",
+    "img": "../../assets/products/hidratante5.jpg",
+    "stock":2,
+    "sizes" : [
+      {
+        "value": "S",
+        "label": "Small"
+      },
+      {
+        "value": "M",
+        "label": "Medium"
+      },
+      {
+        "value": "L",
+        "label": "Largue"
+      }
+     ]
+  }
+]
