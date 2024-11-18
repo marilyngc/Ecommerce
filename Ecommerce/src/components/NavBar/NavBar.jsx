@@ -12,7 +12,7 @@ import logoJehnny from "../../assets/logo/Imagen2.png";
 
 
 
-export function NavBar({ variant = false }) {
+export function NavBar({ variant}) {
   return (
     <>
 
@@ -38,10 +38,10 @@ export function NavBar({ variant = false }) {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 ">
-                  <NavLink />
+                  <NavLink variant={variant} />
                  
                 </Nav>
-                <CartWidget />
+                <CartWidget variant={variant} />
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

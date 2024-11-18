@@ -5,8 +5,8 @@ const ItemCount = ({ max, counter, setCounter, handleAggregate }) => {
   const handlSubtract = () => counter > 0 && setCounter(counter - 1);
 
   return (
-    <div className=" d-flex row w-75 mt-lg-3 ms-lg-1 ">
-      <div className="col-6 d-flex justify-content-between  rounded p-0 w-25 ">
+    <div className=" d-flex row w-75  mt-lg-3 ms-lg-1 ">
+      <div className="col-12 col-lg-6 d-flex justify-content-between  rounded p-0 w-25 ">
       <button
         variant="outline-primary"
         onClick={handlSubtract}
@@ -31,7 +31,7 @@ const ItemCount = ({ max, counter, setCounter, handleAggregate }) => {
       </div>
       
      
-      <button className=" buttonAdd col-6   ms-3 w-25" onClick={handleAggregate}>
+      <button className=" buttonAdd col-12 col-lg-6  lg:ms-3 ms-5 w-25 w-50 lg:my-3 lg:w-25 " onClick={handleAggregate}>
   <span class="span-mother">
       <span>A</span>
       <span>g</span>

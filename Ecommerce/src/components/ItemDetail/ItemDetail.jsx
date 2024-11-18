@@ -42,12 +42,12 @@ const navigate = useNavigate();
   }
  
   return (
-    <Card className="cardItems  m-5 p-4 " style={{ width: "90rem"}}>
+    <Card className="cardItems  m-5 p-4 " style={{ width: "90rem",minHeight: "max-content"}}>
       <div className="row g-0">
-        <div className="col-md-4 w-25">
+        <div className="col-md-4 lg:w-25 ">
           <Card.Img src={img} className="col   "/>
         </div>
-        <div className="col-md-8  ms-5 ">
+        <div className="col-md-8  lg:ms-5 ">
           <Card.Body className="col">
             <Card.Title className="fw-bold">{nombre}</Card.Title>
             <Card.Text>{descripcion}</Card.Text>

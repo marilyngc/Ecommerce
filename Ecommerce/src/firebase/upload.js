@@ -1,5 +1,5 @@
 import { addDoc, collection } from "firebase/firestore";
-import MOCK_DATA from "../components/ItemListContainer/MOCK_DATA.json";
+import MOCK_DATA from "../components/ItemListContainer/MOCK_DATA.json"assert { type: "json" };
 import { dataBase } from "./config.js";
 
 const productsRef = collection(dataBase, "products");

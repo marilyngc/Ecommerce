@@ -2,10 +2,15 @@
 
 
    
-      .nav-link {
+      .nav-link-white {
        
        margin: 0.1rem;
         color:white;
+      }
+      .nav-link-dark {
+       
+       margin: 0.1rem;
+        color:#292929;
       }
     
   }
@@ -14,7 +19,7 @@
    }
   .nav-link-cart {
     font-weight: 700;
-    color: white;
+
     margin: 0.1rem;
     text-decoration: none;
     padding-top: 70px;
@@ -23,10 +28,15 @@
 
       font-size: 1.2rem;
      
+    
     }
  
-   
   }
-
-  
+  .nav-link-cart-white{
+    color: white;
+   }
+   .nav-link-cart-dark{
+    color:#292929;
+     
+    }
   

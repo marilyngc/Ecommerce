@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, NavLink } from "react-router-dom";
 
 import { NavBar } from "../components/NavBar/NavBar";
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
@@ -31,8 +31,8 @@ export const AppRouter = () => {
                     <>
                     <Routes>
                 <Route path="/" element={<NavBar variant />} />
-                <Route path="/catalogo/:categoryId" element={<NavBar variant />} />
-                <Route path="*" element={<NavBar />} />
+                <Route path="/catalogo/:categoryId" element={<NavBar variant /> }  tono={<NavLink variant/>}/>
+                <Route path="*" element={<NavBar /> } />
             </Routes>
 
             <Routes>
