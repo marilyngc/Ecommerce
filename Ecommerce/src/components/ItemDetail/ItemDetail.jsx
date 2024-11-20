@@ -42,7 +42,7 @@ const navigate = useNavigate();
   }
  
   return (
-    <Card className="cardItems  m-5 p-4 " style={{ width: "90rem",minHeight: "max-content"}}>
+    <Card className="cardItems  m-2 p-4 " style={{ width: "90rem",minHeight: "max-content"}}>
       <div className="row g-0">
         <div className="col-md-4 lg:w-25 ">
           <Card.Img src={img} className="col   "/>

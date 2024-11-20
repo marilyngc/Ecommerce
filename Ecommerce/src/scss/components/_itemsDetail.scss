@@ -124,3 +124,29 @@
       $disabled-color: color-contrast($colorBtn)
     );
   }
+
+  /* Estilo base (por defecto, para todas las pantallas) */
+.elementoWidht {
+  width: 100%; /* Ancho completo en pantallas pequeñas */
+}
+
+/* Pantallas medianas (≥ 576px) */
+@media (min-width: 576px) {
+  .elementoWidht {
+    width: 100%; /* Cambiar el ancho al 75% */
+  }
+}
+
+/* Pantallas grandes (≥ 768px) */
+@media (min-width: 768px) {
+  .elementoWidht{
+    width: 50%; /* Cambiar el ancho al 50% */
+  }
+}
+
+/* Pantallas extra grandes (≥ 1200px) */
+@media (min-width: 1200px) {
+  .elementoWidht{
+    width: 60%; /* Cambiar el ancho al 25% */
+  }
+}

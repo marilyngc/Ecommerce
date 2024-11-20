@@ -16,16 +16,16 @@ export const ItemCard = ({ id, nombre, precio, img, beneficios }) => {
     
         <section className="section_card " >
  
-  <div class="container_new">
+  <div className="container_new">
    
   
-    <div class="card_new">
-      <div class="card-inner_new" >
-        <div class="box_new">
-          <div class="imgBox_new">
+    <div className="card_new">
+      <div className="card-inner_new" >
+        <div className="box_new">
+          <div className="imgBox_new">
             <img src={img} alt="Shower Gel"/>
           </div>
-          <div class="icon_new">
+          <div className="icon_new">
           <Link
  className={`iconBox_new ${colorClass}`}
   to={`/detail/${id}`}
@@ -37,7 +37,7 @@ export const ItemCard = ({ id, nombre, precio, img, beneficios }) => {
           </div>
         </div>
       </div>
-      <div class="content">
+      <div className="content">
         <h4>{nombre}</h4>
         <p>${precio}</p>
         {precio > 5.0 && (

@@ -14,7 +14,7 @@ export const SectionContact = () => {
     
       <div className="container justify-content-center align-items-center">
      
-        <div className="d-flex row m-5 ">
+        <div className="d-flex row my-5 mx-2  ">
        <Text/>
        <Links/>
        <Networks/>
