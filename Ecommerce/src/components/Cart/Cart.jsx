@@ -19,7 +19,7 @@ const Cart = () => {
     );
   }
   return (
-    <div className="container    my-5">
+    <div className="container    my-5 pt-5">
       
 <div className="  w-50 my-3"> 
 <h2 className="m-3 fs-4 fw-bold">Producto</h2>

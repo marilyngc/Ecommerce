@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate, NavLink } from "react-router-dom";
 
 import { NavBar } from "../components/NavBar/NavBar";
+import { Navbar1} from "../components/NavBar/Navbar1";
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer";
 import Page404 from "../components/404/Page404";
@@ -30,14 +31,14 @@ export const AppRouter = () => {
                     :
                     <>
                     <Routes>
-                <Route path="/" element={<NavBar variant />} />
-                <Route path="/catalogo/:categoryId" element={<NavBar variant /> }  tono={<NavLink variant/>}/>
-                <Route path="*" element={<NavBar /> } />
+                <Route path="/" element={<Navbar1 variant />} />
+                <Route path="/catalogo/:categoryId" element={<Navbar1 variant /> }  tono={<NavLink variant/>}/>
+                <Route path="*" element={<Navbar1 /> } />
             </Routes>
 
             <Routes>
 
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<Cart /> }  />
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
                 <Route path="/detail/:itemId" element={<ItemDetailContainer/>} />
@@ -46,7 +47,7 @@ export const AppRouter = () => {
                 <Route path="/checkout" element={<Checkout />} />
                 {/*    <Route path="*" element={<Navigate to={"/"}/>}/> */}
           {/*       <Route path="*" element={<Page404 />} /> */}
-                <Route path="/login" element={<LoginScreen/>} />
+                <Route path="/login" element={<LoginScreen/>}  />
                 <Route path="/register" element={<RegisterScreen/>} />
                 
                 </Routes>

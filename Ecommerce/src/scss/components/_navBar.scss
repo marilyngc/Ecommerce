@@ -40,3 +40,36 @@
      
     }
   
+
+    .custom-position {
+      position: fixed; /* Posición fija en la pantalla */
+   
+      
+    }
+  
+  .navbarStyle{
+      top: 2%;        /* Desplazado 20% desde la parte superior */
+      left: 50%;       /* Posiciona el elemento al 50% del ancho desde la izquierda */
+      transform: translateX(-50%); /* Centra el elemento horizontalmente */
+  
+      border-radius: 50px;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(89deg, rgb(255, 255, 255) 39%, rgba(255, 246, 246, 0) 100%);
+  }
+  .custom-position-null{
+         
+  position:absolute;
+  
+  
+  
+  
+  }
+  
+    .icon-back{
+  
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
+      opacity: 1;
+      padding: 8px 16px;
+    }
+    

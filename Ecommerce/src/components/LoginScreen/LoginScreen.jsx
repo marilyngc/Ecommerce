@@ -31,37 +31,6 @@ export const LoginScreen = () => {
   }, []);
     return (
 
-      //   <div className="container">
-      //          <h2>Login</h2>
-
-      //          <form action="" onSubmit={handleSubmit}>
-      //           <input 
-      //           onChange={handleInputChange }
-      //           value={values.email}
-      //           type="email"
-      //           placeholder="email" 
-      //           className="form-control"
-      //           name="email"
-      //           />
-
-
-
-
-          
-      //           <input
-      //           onChange={handleInputChange }
-      //              value={values.password}
-      //           type="password"
-      //           placeholder="password" 
-      //           className="form-control"
-      //           name="password"
-                
-      //           />
-
-      //           <button  type="submit">Iniciar sesion</button>
-      //           <Link to="/register">Registrarme</Link>
-      //          </form>
-      //   </div>
 
       <>
        <section id="sectionLogin">

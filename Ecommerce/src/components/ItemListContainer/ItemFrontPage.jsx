@@ -1,6 +1,7 @@
 import { Image } from "react-bootstrap";
 
-import front from "../../assets/products/BlackandBeige.jpg"
+
+import front from "../../assets/back.png"
 import { bottom } from "@popperjs/core";
 export const ItemFrontPage = () => {
   return (
